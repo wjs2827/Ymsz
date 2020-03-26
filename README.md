@@ -4,9 +4,9 @@
 
 性别男，若依是给还没有出生女儿取的名字（寓意：你若不离不弃，我必生死相依）
 
-> 如需前后端分离版本，请移步 [RuoYi-Vue](https://gitee.com/y_project/RuoYi-Vue)
+> 如需前后端分离版本，请移步 [ymsz-Vue](https://gitee.com/y_project/ymsz-Vue)
 
-> 如需单应用，请移步 [RuoYi-fast](https://gitee.com/y_project/RuoYi-fast)  `(保持同步更新)`，如需其他版本，请移步 [项目扩展](http://doc.ruoyi.vip/ruoyi/document/xmkz.html)  `(不定时更新)`
+> 如需单应用，请移步 [ymsz-fast](https://gitee.com/y_project/ymsz-fast)  `(保持同步更新)`，如需其他版本，请移步 [项目扩展](http://doc.ymsz.vip/ymsz/document/xmkz.html)  `(不定时更新)`
 
 > 阿里云通用云产品1888优惠券 ：[点我领取](https://www.aliyun.com/minisite/goods?userCode=brki8iof)&nbsp;&nbsp;&nbsp;&nbsp;腾讯云通用云产品2860优惠券 ：[点我领取](https://cloud.tencent.com/redirect.php?redirect=1025&cps_key=198c8df2ed259157187173bc7f4f32fd&from=console)&nbsp;&nbsp;`(仅限新用户)`
 
@@ -35,9 +35,9 @@
 > admin/admin123  
 > 陆陆续续收到一些打赏，为了更好的体验已用于演示服务器升级。谢谢各位小伙伴。
 
-演示地址：http://ruoyi.vip  
+演示地址：http://ymsz.vip  
 
-文档地址：http://doc.ruoyi.vip
+文档地址：http://doc.ymsz.vip
 
 ## 演示图
 
