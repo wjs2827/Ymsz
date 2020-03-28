@@ -1,12 +1,12 @@
-ymsz com.ruoyi.framework.shiro.session;
+package com.ymsz.framework.shiro.session;
 
 import org.apache.shiro.session.mgt.SimpleSession;
-import com.ruoyi.common.enums.OnlineStatus;
+import com.ymsz.common.enums.OnlineStatus;
 
 /**
  * 在线用户会话属性
  * 
- * @author ruoyi
+ * @author ymsz
  */
 public class OnlineSession extends SimpleSession
 {

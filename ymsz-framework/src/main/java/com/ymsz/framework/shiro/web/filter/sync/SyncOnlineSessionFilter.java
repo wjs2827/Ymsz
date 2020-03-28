@@ -1,17 +1,17 @@
-ymsz com.ruoyi.framework.shiro.web.filter.sync;
+package com.ymsz.framework.shiro.web.filter.sync;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import org.apache.shiro.web.filter.PathMatchingFilter;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.ruoyi.common.constant.ShiroConstants;
-import com.ruoyi.framework.shiro.session.OnlineSession;
-import com.ruoyi.framework.shiro.session.OnlineSessionDAO;
+import com.ymsz.common.constant.ShiroConstants;
+import com.ymsz.framework.shiro.session.OnlineSession;
+import com.ymsz.framework.shiro.session.OnlineSessionDAO;
 
 /**
  * 同步Session数据到Db
  * 
- * @author ruoyi
+ * @author ymsz
  */
 public class SyncOnlineSessionFilter extends PathMatchingFilter
 {

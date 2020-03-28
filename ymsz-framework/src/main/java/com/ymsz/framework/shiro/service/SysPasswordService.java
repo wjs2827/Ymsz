@@ -1,4 +1,4 @@
-ymsz com.ruoyi.framework.shiro.service;
+package com.ymsz.framework.shiro.service;
 
 import java.util.concurrent.atomic.AtomicInteger;
 import javax.annotation.PostConstruct;
@@ -8,14 +8,14 @@ import org.apache.shiro.crypto.hash.Md5Hash;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import com.ruoyi.common.constant.Constants;
-import com.ruoyi.common.constant.ShiroConstants;
-import com.ruoyi.common.exception.user.UserPasswordNotMatchException;
-import com.ruoyi.common.exception.user.UserPasswordRetryLimitExceedException;
-import com.ruoyi.common.utils.MessageUtils;
-import com.ruoyi.framework.manager.AsyncManager;
-import com.ruoyi.framework.manager.factory.AsyncFactory;
-import com.ruoyi.system.domain.SysUser;
+import com.ymsz.common.constant.Constants;
+import com.ymsz.common.constant.ShiroConstants;
+import com.ymsz.common.exception.user.UserPasswordNotMatchException;
+import com.ymsz.common.exception.user.UserPasswordRetryLimitExceedException;
+import com.ymsz.common.utils.MessageUtils;
+import com.ymsz.framework.manager.AsyncManager;
+import com.ymsz.framework.manager.factory.AsyncFactory;
+import com.ymsz.system.domain.SysUser;
 
 /**
  * 登录密码方法

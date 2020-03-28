@@ -1,23 +1,23 @@
-ymsz com.ruoyi.framework.shiro.service;
+package com.ymsz.framework.shiro.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
-import com.ruoyi.common.constant.Constants;
-import com.ruoyi.common.constant.ShiroConstants;
-import com.ruoyi.common.constant.UserConstants;
-import com.ruoyi.common.utils.MessageUtils;
-import com.ruoyi.common.utils.ServletUtils;
-import com.ruoyi.framework.manager.AsyncManager;
-import com.ruoyi.framework.manager.factory.AsyncFactory;
-import com.ruoyi.framework.util.ShiroUtils;
-import com.ruoyi.system.domain.SysUser;
-import com.ruoyi.system.service.ISysUserService;
+import com.ymsz.common.constant.Constants;
+import com.ymsz.common.constant.ShiroConstants;
+import com.ymsz.common.constant.UserConstants;
+import com.ymsz.common.utils.MessageUtils;
+import com.ymsz.common.utils.ServletUtils;
+import com.ymsz.framework.manager.AsyncManager;
+import com.ymsz.framework.manager.factory.AsyncFactory;
+import com.ymsz.framework.util.ShiroUtils;
+import com.ymsz.system.domain.SysUser;
+import com.ymsz.system.service.ISysUserService;
 
 /**
  * 注册校验方法
  * 
- * @author ruoyi
+ * @author ymsz
  */
 @Component
 public class SysRegisterService

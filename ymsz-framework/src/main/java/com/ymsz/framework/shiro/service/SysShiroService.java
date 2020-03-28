@@ -1,18 +1,18 @@
-ymsz com.ruoyi.framework.shiro.service;
+package com.ymsz.framework.shiro.service;
 
 import java.io.Serializable;
 import org.apache.shiro.session.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.framework.shiro.session.OnlineSession;
-import com.ruoyi.system.domain.SysUserOnline;
-import com.ruoyi.system.service.ISysUserOnlineService;
+import com.ymsz.common.utils.StringUtils;
+import com.ymsz.framework.shiro.session.OnlineSession;
+import com.ymsz.system.domain.SysUserOnline;
+import com.ymsz.system.service.ISysUserOnlineService;
 
 /**
  * 会话db操作处理
  * 
- * @author ruoyi
+ * @author ymsz
  */
 @Component
 public class SysShiroService

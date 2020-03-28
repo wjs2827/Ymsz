@@ -1,18 +1,18 @@
-ymsz com.ruoyi.framework.shiro.web.filter.captcha;
+package com.ymsz.framework.shiro.web.filter.captcha;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import org.apache.shiro.web.filter.AccessControlFilter;
 import com.google.code.kaptcha.Constants;
-import com.ruoyi.common.constant.ShiroConstants;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.framework.util.ShiroUtils;
+import com.ymsz.common.constant.ShiroConstants;
+import com.ymsz.common.utils.StringUtils;
+import com.ymsz.framework.util.ShiroUtils;
 
 /**
  * 验证码过滤器
  * 
- * @author ruoyi
+ * @author ymsz
  */
 public class CaptchaValidateFilter extends AccessControlFilter
 {

@@ -1,25 +1,25 @@
-ymsz com.ruoyi.framework.shiro.service;
+package com.ymsz.framework.shiro.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
-import com.ruoyi.common.constant.Constants;
-import com.ruoyi.common.constant.ShiroConstants;
-import com.ruoyi.common.constant.UserConstants;
-import com.ruoyi.common.enums.UserStatus;
-import com.ruoyi.common.exception.user.CaptchaException;
-import com.ruoyi.common.exception.user.UserBlockedException;
-import com.ruoyi.common.exception.user.UserDeleteException;
-import com.ruoyi.common.exception.user.UserNotExistsException;
-import com.ruoyi.common.exception.user.UserPasswordNotMatchException;
-import com.ruoyi.common.utils.DateUtils;
-import com.ruoyi.common.utils.MessageUtils;
-import com.ruoyi.common.utils.ServletUtils;
-import com.ruoyi.framework.manager.AsyncManager;
-import com.ruoyi.framework.manager.factory.AsyncFactory;
-import com.ruoyi.framework.util.ShiroUtils;
-import com.ruoyi.system.domain.SysUser;
-import com.ruoyi.system.service.ISysUserService;
+import com.ymsz.common.constant.Constants;
+import com.ymsz.common.constant.ShiroConstants;
+import com.ymsz.common.constant.UserConstants;
+import com.ymsz.common.enums.UserStatus;
+import com.ymsz.common.exception.user.CaptchaException;
+import com.ymsz.common.exception.user.UserBlockedException;
+import com.ymsz.common.exception.user.UserDeleteException;
+import com.ymsz.common.exception.user.UserNotExistsException;
+import com.ymsz.common.exception.user.UserPasswordNotMatchException;
+import com.ymsz.common.utils.DateUtils;
+import com.ymsz.common.utils.MessageUtils;
+import com.ymsz.common.utils.ServletUtils;
+import com.ymsz.framework.manager.AsyncManager;
+import com.ymsz.framework.manager.factory.AsyncFactory;
+import com.ymsz.framework.util.ShiroUtils;
+import com.ymsz.system.domain.SysUser;
+import com.ymsz.system.service.ISysUserService;
 
 /**
  * 登录校验方法

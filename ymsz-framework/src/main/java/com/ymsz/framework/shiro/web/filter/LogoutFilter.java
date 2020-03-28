@@ -1,4 +1,4 @@
-ymsz com.ymsz.framework.shiro.web.filter;
+package com.ymsz.framework.shiro.web.filter;
 
 import java.io.Serializable;
 import java.util.Deque;
