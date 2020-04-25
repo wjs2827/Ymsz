@@ -1,11 +1,18 @@
 package com.ymsz.framework.config;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import javax.servlet.Filter;
+import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
+import com.ymsz.common.utils.StringUtils;
+import com.ymsz.common.utils.spring.SpringUtils;
+import com.ymsz.framework.shiro.realm.UserRealm;
+import com.ymsz.framework.shiro.session.OnlineSessionDAO;
+import com.ymsz.framework.shiro.session.OnlineSessionFactory;
+import com.ymsz.framework.shiro.web.filter.LogoutFilter;
+import com.ymsz.framework.shiro.web.filter.captcha.CaptchaValidateFilter;
+import com.ymsz.framework.shiro.web.filter.kickout.KickoutSessionFilter;
+import com.ymsz.framework.shiro.web.filter.online.OnlineSessionFilter;
+import com.ymsz.framework.shiro.web.filter.sync.SyncOnlineSessionFilter;
+import com.ymsz.framework.shiro.web.session.OnlineWebSessionManager;
+import com.ymsz.framework.shiro.web.session.SpringSessionValidationScheduler;
 import org.apache.commons.io.IOUtils;
 import org.apache.shiro.cache.ehcache.EhCacheManager;
 import org.apache.shiro.codec.Base64;
@@ -21,19 +28,13 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import com.ymsz.common.utils.StringUtils;
-import com.ymsz.common.utils.spring.SpringUtils;
-import com.ymsz.framework.shiro.realm.UserRealm;
-import com.ymsz.framework.shiro.session.OnlineSessionDAO;
-import com.ymsz.framework.shiro.session.OnlineSessionFactory;
-import com.ymsz.framework.shiro.web.filter.LogoutFilter;
-import com.ymsz.framework.shiro.web.filter.captcha.CaptchaValidateFilter;
-import com.ymsz.framework.shiro.web.filter.kickout.KickoutSessionFilter;
-import com.ymsz.framework.shiro.web.filter.online.OnlineSessionFilter;
-import com.ymsz.framework.shiro.web.filter.sync.SyncOnlineSessionFilter;
-import com.ymsz.framework.shiro.web.session.OnlineWebSessionManager;
-import com.ymsz.framework.shiro.web.session.SpringSessionValidationScheduler;
-import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
+
+import javax.servlet.Filter;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
  * 权限配置加载
@@ -241,14 +242,14 @@ public class ShiroConfig
         LinkedHashMap<String, String> filterChainDefinitionMap = new LinkedHashMap<>();
         // 对静态资源设置匿名访问
         filterChainDefinitionMap.put("/favicon.ico**", "anon");
-        filterChainDefinitionMap.put("/ymsz.png**", "anon");
+        filterChainDefinitionMap.put("/ruoyi.png**", "anon");
         filterChainDefinitionMap.put("/css/**", "anon");
         filterChainDefinitionMap.put("/docs/**", "anon");
         filterChainDefinitionMap.put("/fonts/**", "anon");
         filterChainDefinitionMap.put("/img/**", "anon");
         filterChainDefinitionMap.put("/ajax/**", "anon");
         filterChainDefinitionMap.put("/js/**", "anon");
-        filterChainDefinitionMap.put("/ymsz/**", "anon");
+        filterChainDefinitionMap.put("/ruoyi/**", "anon");
         filterChainDefinitionMap.put("/captcha/captchaImage**", "anon");
         // 退出 logout地址，shiro去清除session
         filterChainDefinitionMap.put("/logout", "logout");
